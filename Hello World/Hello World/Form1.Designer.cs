@@ -28,33 +28,49 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblHelloWorld = new System.Windows.Forms.Label();
+            this.btnShow = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // lblHelloWorld
             // 
-            this.label1.Location = new System.Drawing.Point(105, 84);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.lblHelloWorld.AutoSize = true;
+            this.lblHelloWorld.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHelloWorld.ForeColor = System.Drawing.Color.Red;
+            this.lblHelloWorld.Location = new System.Drawing.Point(56, 96);
+            this.lblHelloWorld.Name = "lblHelloWorld";
+            this.lblHelloWorld.Size = new System.Drawing.Size(0, 25);
+            this.lblHelloWorld.TabIndex = 0;
+            this.lblHelloWorld.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // btnShow
+            // 
+            this.btnShow.Location = new System.Drawing.Point(61, 226);
+            this.btnShow.Name = "btnShow";
+            this.btnShow.Size = new System.Drawing.Size(125, 23);
+            this.btnShow.TabIndex = 1;
+            this.btnShow.Text = "Show Hello World";
+            this.btnShow.UseVisualStyleBackColor = true;
+            this.btnShow.Click += new System.EventHandler(this.btnShow_Click);
             // 
             // FrmHelloWorld
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(273, 261);
+            this.Controls.Add(this.btnShow);
+            this.Controls.Add(this.lblHelloWorld);
             this.Name = "FrmHelloWorld";
             this.Text = "Hello World";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblHelloWorld;
+        private System.Windows.Forms.Button btnShow;
     }
 }
 
